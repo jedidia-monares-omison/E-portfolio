@@ -1,59 +1,255 @@
-body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 0;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-        }
+    body {
+      font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', Arial, sans-serif;
+      line-height: 1.55;
+      color: #1e2f3e;
+      background: #eef2f5;
+      scroll-behavior: smooth;
+    }
 
-        header {
-            background: #2c3e50; /* Deep blue-grey */
-            color: #ffffff;
-            padding: 60px 20px;
-            text-align: center;
-            border-radius: 10px 10px 0 0;
-        }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 24px;
+    }
 
-        h1 { margin: 0; font-size: 2.5rem; }
-        .tagline { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+    /* header area */
+    header {
+      background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-radius: 28px 28px 28px 28px;
+      margin-bottom: 2rem;
+      box-shadow: 0 12px 20px -10px rgba(0,0,0,0.2);
+    }
 
-        section {
-            background: #fff;
-            padding: 30px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+    h1 {
+      font-size: 2.8rem;
+      letter-spacing: -0.5px;
+      font-weight: 700;
+      margin: 0;
+      word-break: keep-all;
+    }
 
-        h2 {
-            color: #2980b9;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
+    .tagline {
+      font-size: 1.25rem;
+      font-weight: 400;
+      opacity: 0.92;
+      margin-top: 0.6rem;
+      border-top: 1px solid rgba(255,255,255,0.25);
+      display: inline-block;
+      padding-top: 0.6rem;
+    }
 
-        .status-badge {
-            background: #e67e22;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.9rem;
-        }
+    /* section styling */
+    section {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 2rem 2rem 2rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.2s ease;
+    }
 
-        .project-card {
-            border-left: 4px solid #2980b9;
-            padding-left: 15px;
-            margin: 20px 0;
-        }
+    h2 {
+      color: #1f5e8e;
+      font-size: 1.8rem;
+      font-weight: 600;
+      border-left: 5px solid #2c7cb6;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.2px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #7f8c8d;
-            font-size: 0.9rem;
-        }
+    /* about / project elements */
+    .status-badge {
+      background: #e67e22;
+      color: white;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      display: inline-block;
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    .project-card {
+      border-left: 4px solid #2c7cb6;
+      background: #fafcff;
+      padding: 0.8rem 1.2rem;
+      margin: 1.5rem 0;
+      border-radius: 16px;
+      transition: all 0.2s;
+    }
+
+    .project-card h3 {
+      color: #1f5e8e;
+      margin: 0.5rem 0 0.25rem;
+      font-size: 1.25rem;
+    }
+
+    .project-card p {
+      margin: 0.5rem 0;
+      color: #2c3e44;
+    }
+
+    /* certificates grid */
+    .certs-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .cert-card {
+      flex: 1 1 calc(50% - 1.8rem);
+      background: #ffffff;
+      border: 1px solid #e2edf2;
+      border-radius: 24px;
+      padding: 1.5rem;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 12px -8px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(0px);
+    }
+
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 28px -12px rgba(0, 0, 0, 0.15);
+      border-color: #cbdde6;
+    }
+
+    .cert-icon {
+      font-size: 2rem;
+      margin-bottom: 0.6rem;
+      display: inline-block;
+    }
+
+    .cert-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1e4663;
+      margin: 0.25rem 0 0.5rem 0;
+      line-height: 1.3;
+    }
+
+    .cert-issuer {
+      font-weight: 600;
+      color: #2c7cb6;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin: 0.25rem 0;
+      font-size: 0.9rem;
+    }
+
+    .cert-detail {
+      font-size: 0.9rem;
+      color: #3a5b6e;
+      margin: 0.4rem 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .cert-detail strong {
+      font-weight: 600;
+      color: #1f3b4c;
+    }
+
+    .verify-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #eef3fc;
+      color: #1f6e9c;
+      padding: 6px 16px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: all 0.2s;
+      border: 1px solid #cde3ef;
+    }
+
+    .verify-link:hover {
+      background: #d9e9f5;
+      color: #0b4f73;
+      border-color: #9bc0d4;
+      transform: scale(0.97);
+    }
+
+    .hr-divider {
+      margin: 0.8rem 0 0.2rem;
+      height: 1px;
+      background: #e0edf3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.8rem 0.5rem;
+      color: #5f7f92;
+      font-size: 0.85rem;
+      border-top: 1px solid #d4e2ea;
+      margin-top: 1rem;
+    }
+
+    /* responsive */
+    @media (max-width: 760px) {
+      .container {
+        padding: 0 18px;
+      }
+      .certs-grid {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .cert-card {
+        flex: 1 1 100%;
+      }
+      header {
+        padding: 2rem 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cert-title {
+        font-size: 1.2rem;
+      }
+      .verify-link {
+        padding: 4px 12px;
+      }
+    }
+
+    /* little extra for clean list */
+    .inline-icon {
+      font-size: 1.1rem;
+      display: inline-block;
+      width: 1.4rem;
+      text-align: center;
+    }
+
+    .badge-light {
+      background: #eef2f7;
+      padding: 2px 10px;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #2c6e8f;
+    }
