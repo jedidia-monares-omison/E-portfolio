@@ -1,44 +1,110 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jedidia Omison | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-      <h1>Jedidia M. Omison</h1>
-      <p class="tagline">Computer Engineering Student</p>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Jedidia Omison | Computer Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Jedidia M. Omison</h1>
+    <div class="tagline">⚡ Computer Engineering Student · Hardware & Web Enthusiast</div>
+  </header>
 
-    <div class="container">
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hi! I'm a Computer Engineering Student currently exploring the world
-          of web development. While my research was focused on
-          hardware-soldering components and working with microcontrollers like
-          the ESP-32 - I have a strong passion for building things for the
-          browser.
-        </p>
-        <p><strong>Current Status: </strong>Learning Front-End Development</p>
-      </section>
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>📌 About Me</h2>
+    <p>
+      Hi! I'm a Computer Engineering student currently exploring the world
+      of web development. While my research was focused on hardware —
+      soldering components and working with microcontrollers like the ESP-32 — 
+      I have a strong passion for building things for the browser.
+    </p>
+    <p><strong>🎯 Current Focus:</strong> Front-End Development · Full-Stack Foundations · System Integration</p>
+    <span class="status-badge">✨ Learning Full-Stack & Cloud Basics</span>
+  </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Hardware Research: BU01 & ESP-32</h3>
-            <p>Integrated hardware modules and designed PCB layouts for research applications.</p>
-
-            <h3>Personal Portfolio:</h3>
-            <p>A responsive website hosted on GitHub to showcase my journey into web-development.</p>
-        </div>
-      </section>
-
-      <footer>
-        &copy; 2026 Jedidia M. Omison
-      </footer>
+  <!-- PROJECTS SECTION (keeping original content + clarity) -->
+  <section id="projects">
+    <h2>🛠️ Projects</h2>
+    <div class="project-card">
+      <h3>🔬 Hardware Research: BU01 & ESP-32 Integration</h3>
+      <p>Integrated hardware modules (GPS/GNSS BU01) with ESP-32 microcontrollers, designed custom PCB layouts and optimized low-power data logging for research applications.</p>
     </div>
-  </body>
+    <div class="project-card">
+      <h3>🌐 Personal Portfolio & Web Experiments</h3>
+      <p>A responsive, modern portfolio website hosted on GitHub Pages to document my journey into web development, featuring interactive UI and certificate showcase.</p>
+    </div>
+    <div class="project-card">
+      <h3>💡 Future plans: Smart Dashboard</h3>
+      <p>Building a real-time sensor dashboard using MQTT + React to visualize ESP-32 data streams.</p>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES SECTION: two official credentials added -->
+  <section id="certificates">
+    <h2>📜 Certifications & Credentials</h2>
+    <div class="certs-grid">
+      
+      <!-- CERTIFICATE 1: Coursera - OOP with C++ (Microsoft) -->
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <div class="cert-title">Object Oriented Programming with C++</div>
+        <div class="cert-issuer">
+          <span>🏛️ Microsoft & Coursera</span>
+          <span class="badge-light">Authorized Partner</span>
+        </div>
+        <div class="cert-detail">
+          <span>📅 Completed: 2026</span>
+          <span>🔖 Credential ID: SAZUBVC1BDXX</span>
+        </div>
+        <div class="cert-detail">
+          <span>⭐ Focus: OOP principles, classes, inheritance, polymorphism, STL fundamentals</span>
+        </div>
+        <div class="hr-divider"></div>
+        <a href="https://coursera.org/verify/SAZUBVC1BDXX" target="_blank" rel="noopener noreferrer" class="verify-link">
+          🔗 Verify on Coursera ↗
+        </a>
+        <div style="margin-top: 8px; font-size: 0.75rem; color: #4f7a9e;">
+          ✅ Verified by Microsoft & Coursera — official certificate
+        </div>
+      </div>
+      
+      <!-- CERTIFICATE 2: Udemy - Full-Stack Web Development Bootcamp -->
+      <div class="cert-card">
+        <div class="cert-icon">💻</div>
+        <div class="cert-title">The Complete Full-Stack Web Development Bootcamp</div>
+        <div class="cert-issuer">
+          <span>📘 Udemy</span>
+          <span class="badge-light">62 total hours</span>
+        </div>
+        <div class="cert-detail">
+          <span>👩‍🏫 Instructor: Dr. Angela Yu</span>
+          <span>📆 Completed: March 8, 2026</span>
+        </div>
+        <div class="cert-detail">
+          <span>⚙️ Technologies: HTML5, CSS3, JavaScript, React, Node.js, MongoDB, APIs & more</span>
+        </div>
+        <div class="hr-divider"></div>
+        <div class="cert-detail">
+          <span>🏅 Certificate of Completion · 62 hours intensive training</span>
+        </div>
+        <div style="margin-top: 10px; font-size: 0.75rem; background: #f3f9fe; display: inline-block; padding: 4px 12px; border-radius: 30px;">
+          🧾 Full-stack mastery (front-end + back-end)
+        </div>
+      </div>
+    </div>
+    <!-- additional note: both credentials align with current portfolio -->
+    <p style="margin-top: 1.8rem; font-size: 0.85rem; color: #3c6e8f; background: #eef5fa; padding: 0.6rem 1rem; border-radius: 28px;">
+      🧠 <strong>Continuous learner:</strong> These certificates reflect my dedication to both hardware-oriented programming (C++/OOP) and modern web development (full-stack).
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Jedidia M. Omison — Computer Engineering Portfolio · Built with curiosity & code
+  </footer>
+</div>
+</body>
 </html>
